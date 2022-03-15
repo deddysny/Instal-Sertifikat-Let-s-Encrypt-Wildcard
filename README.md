@@ -12,7 +12,7 @@
 -  `sudo apt update`
 -  Setelah update, jalankan perintah berikut untuk memasang Certbot:
 -  `sudo apt install certbot`
-   Note : Pastikan menggunakan certbot versi 0.22 atau di atasnya. Sebab versi certbot sebelum 0.22 tidak mendukung Wildcard Certificate.  
+-   Note : Pastikan menggunakan certbot versi 0.22 atau di atasnya. Sebab versi certbot sebelum 0.22 tidak mendukung Wildcard Certificate.  
 -  Certbot sudah terpasang, sekarang waktunya untuk generate sertifikat nya. Caranya:
 -  `sudo certbot certonly --manual -d *.xxxxx.com -d xxxxx.com --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory`
-   Note : ganti xxxxx.com dengan alamat domain yang kamu miliki. Dalam contoh di atas, kita akan membuat sertifikat baik untuk *.xxxxx.com dan xxxxx.com
+-   Note : ganti xxxxx.com dengan alamat domain yang kamu miliki. Dalam contoh di atas, kita akan membuat sertifikat baik untuk *.xxxxx.com dan xxxxx.com
